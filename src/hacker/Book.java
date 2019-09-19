@@ -28,4 +28,10 @@ public class Book {
     public void setName(String name) {
         this.name = name;
     }
+
+    Book(String name, String author, String isbn) {
+        this.name = name;
+        this.author = author;
+        this.isbn = isbn;
+    }
 }
