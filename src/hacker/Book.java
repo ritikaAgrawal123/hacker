@@ -1,9 +1,9 @@
 package hacker;
 
 public class Book {
-    String name;
-    String author;
-    String isbn;
+    private String name;
+    private String author;
+    private String isbn;
 
     public String getAuthor() {
         return author;
@@ -33,5 +33,10 @@ public class Book {
         this.name = name;
         this.author = author;
         this.isbn = isbn;
+    }
+
+    @Override
+    public String toString() {
+        return "-----------------------------\nBook Name:\t" + getName() + "\nAuthor Name:\t" + getAuthor() + "\nISBN:\t" + getIsbn() + "\n-----------------------------";
     }
 }
